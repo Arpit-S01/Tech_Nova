@@ -111,7 +111,7 @@ export default function AssessmentStudio() {
     } catch (err) {
       setError({
         title: err.code === 'NO_TEXT_LAYER' ? 'No readable text in this file'
-          : err.code === 'NO_API_KEY' ? 'Claude is not configured on the server'
+          : err.code === 'NO_API_KEY' ? 'Gemini is not configured on the server'
           : 'Upload failed',
         message: err.message
       });

@@ -18,8 +18,8 @@ app.get('/api/health', (req, res) =>
   res.json({
     ok: true,
     firebaseAdmin: firebaseReady(),
-    claudeConfigured: Boolean(config.anthropicApiKey),
-    model: config.anthropicModel,
+    geminiConfigured: Boolean(config.geminiApiKey),
+    model: config.geminiModel,
     maxUploadMb: Math.round(config.maxUploadBytes / 1024 / 1024)
   })
 );
